@@ -13168,8 +13168,11 @@ D7:function D7(a){var _=this
 _.a=_.d=null
 _.b=a
 _.c=null},
-rx:function rx(a,b){this.a=a
-this.y=b},
+rx:function rx(a,b,c,d){var _=this
+_.a=a
+_.c=b
+_.d=c
+_.y=d},
 avr(){var s=new P.iM(null,null,t.RA)
 s.L(0,C.bj)
 return new M.KE(s,C.bj)},
@@ -77109,10 +77112,10 @@ $2(a,b){var s,r=null,q=this.a,p=q.e
 P.c7(""+b+" -- "+p.length)
 s=p.length
 if(b>=s){if(!q.r)q.D1()
-return new M.rx(r,T.dA(T.b9(F.GG(r,10),24,24),r,r))}else if(q.x&&!q.r&&b<s)q.D1()
+return new M.rx(r,r,r,T.dA(T.b9(F.GG(r,10),24,24),r,r))}else if(q.x&&!q.r&&b<s)q.D1()
 if(!q.x&&!q.r&&!q.y)q.y=!0
 if(q.y&&b===p.length)P.c7("Load Up Next chapter!")
-return new M.rx(new D.ok(p[b],1),r)},
+return new M.rx(new D.ok(p[b],1),0.1,5,r)},
 $S:417}
 Z.Fx.prototype={
 G(a,b){var s,r,q,p=null,o=t.l,n=b.M(o).f
@@ -78030,10 +78033,10 @@ s=p.gakY()
 r=p.a
 q=r.dx
 return new O.yX(n,D.avi(!1,l,p.ga2K(),s,o,!0,r.f,m,q),null)},
-a2L(a,b){var s,r=null,q=this.a2V(a,b),p=q.y,o=this.gWy(),n=this.a
+a2L(a,b){var s,r=null,q=this.a2V(a,b),p=q.y,o=this.gWy(),n=this.a,m=q.c,l=q.d
 if(p!=null){n.toString
-s=new E.ru(r,r,r,r,!1,r,r,o,!1,p,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,new N.on(b))}else{n.toString
-s=new E.ru(q.a,r,r,r,!1,r,r,o,!1,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,r,new N.on(b))}return T.Gp(s)},
+s=new E.ru(r,r,r,r,!1,r,r,o,!1,p,r,l,m,r,r,r,r,r,r,r,r,r,r,r,r,new N.on(b))}else{n.toString
+s=new E.ru(q.a,r,r,r,!1,r,r,o,!1,r,r,l,m,r,r,r,r,r,r,r,r,r,r,r,r,new N.on(b))}return T.Gp(s)},
 a2V(a,b){var s=this.a.e.$2(a,b)
 return s}}
 M.rx.prototype={}
@@ -78446,22 +78449,26 @@ if(!o){o=q.d
 o.toString
 p.W(0,o)}q.e=a
 a.a5(0,q.a5P())},
-G(a,b){var s,r,q,p,o,n,m,l,k,j,i=this
-if(i.x)return i.a2O(b)
-if(i.z!=null)return i.a2J(b)
-s=i.a
-r=s.go
-q=i.y
-q.toString
-p=s.c
-o=s.f
-n=s.x
-m=s.cy
-l=s.db
-k=s.fr
-j=s.fx
+G(a,b){var s,r,q,p,o,n,m,l,k,j,i,h,g=this
+if(g.x)return g.a2O(b)
+if(g.z!=null)return g.a2J(b)
+s=g.a
+r=s.ch
+if(r==null)r=0
+q=s.Q
+if(q==null)q=1/0
+p=s.go
+o=g.y
+o.toString
+n=s.c
+m=s.f
+l=s.x
+k=s.cy
+j=s.db
+i=s.fr
+h=s.fx
 s=s.fy
-return new M.rw(o,p,!1,n,!1,null,m,l,new M.zT(0,1/0,C.jw,r,q),E.azp(),C.C,k,j,s,!1,!1,!1,C.iz,null)},
+return new M.rw(m,n,!1,l,!1,null,k,j,new M.zT(r,q,C.jw,p,o),E.azp(),C.C,i,h,s,!1,!1,!1,C.iz,null)},
 a2O(a){this.a.toString
 return new Y.KC(this.f,null)},
 a2J(a){var s=this.a
@@ -78497,8 +78504,12 @@ s.z=this.b
 s.Q=this.c},
 $S:0}
 L.GO.prototype={
-G(a,b){var s=this,r=s.fx
-return new M.rw(s.e,null,!1,s.f,!1,s.c,s.y,s.z,new M.zT(0,1/0,C.jw,r,r),E.azp(),C.C,s.dx,s.dy,s.fr,!1,!1,!1,C.iz,null)}}
+G(a,b){var s,r,q=this,p=q.ch
+if(p==null)p=0
+s=q.Q
+if(s==null)s=1/0
+r=q.fx
+return new M.rw(q.e,null,!1,q.f,!1,q.c,q.y,q.z,new M.zT(p,s,C.jw,r,r),E.azp(),C.C,q.dx,q.dy,q.fr,!1,!1,!1,C.iz,null)}}
 Z.xf.prototype={
 m(a){this.a=null
 this.hg(0)},
@@ -78532,7 +78543,7 @@ if(r!==b)s=b instanceof M.zT&&H.z(r)===H.z(b)&&r.a===b.a&&r.b===b.b&&r.c.k(0,b.c
 else s=!0
 return s},
 gv(a){var s=this,r=s.d,q=s.e
-return C.e.gv(s.a)^C.e.gv(s.b)^C.c.gv(s.c.a)^P.a3(r.a,r.b,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a)^P.a3(q.a,q.b,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a)}}
+return C.d.gv(s.a)^C.e.gv(s.b)^C.c.gv(s.c.a)^P.a3(r.a,r.b,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a)^P.a3(q.a,q.b,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a,C.a)}}
 M.GD.prototype={}
 E.a6u.prototype={}
 T.vR.prototype={}
