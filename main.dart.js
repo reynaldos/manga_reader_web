@@ -76907,7 +76907,7 @@ q=P.aD(q,!0,H.j(q).h("o.E"))
 s=a.M(t.l).f
 if(q.length>0)q=new E.yv(new H.bP(q,H.a9(q).h("bP<1,cM>")),C.dz,t.B.a($.c9().cv("userSettings",!1,t.v)).cN(0,"user"),new N.pf())
 else q=T.cY(L.am("No mangas in collection...",r,r,r,A.aq(r,r,K.w(a).k3,r,r,r,r,r,r,r,r,20,r,C.G,r,r,!0,r,1,r,r,r,r,r,r),r,r),r,r)
-return M.ae(r,q,C.j,r,r,r,r,s.a.b*0.21,r,r,r,r,r)},
+return M.ae(r,q,C.j,r,new S.au(0,1/0,200,1/0),r,r,s.a.b*0.21,r,r,r,r,r)},
 $S:75}
 E.yv.prototype={
 a6(){return new E.RT(C.k)}}
@@ -77426,7 +77426,7 @@ r.c9(0)}Y.dV($.bd(),new Z.eV(s.d,r,null),P.bk(0,500,0),C.be,t.z)},
 $S:0}
 B.Hr.prototype={
 F(a,b){var s=null
-return new T.aJ(C.bF,T.cY(L.am("Downloads coming soon...",s,s,s,A.aq(s,s,K.w(b).x1,s,s,s,s,s,s,s,s,32,s,C.G,s,s,!0,s,1,s,s,s,s,s,s),C.aF,s),s,s),s)}}
+return new T.aJ(C.bF,T.cY(L.am("Downloads coming soon...",s,s,s,A.aq(s,s,K.w(b).x1,s,s,s,s,s,s,s,s,26,s,C.G,s,s,!0,s,1,s,s,s,s,s,s),C.aF,s),s,s),s)}}
 X.xf.prototype={
 a6(){return new X.QK(null,C.k)}}
 X.QK.prototype={
